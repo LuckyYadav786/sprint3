@@ -9,7 +9,7 @@ const Home = () => {
     };
 
   React.useEffect(() => {
-    fetch(`http://localhost:8080/products`)
+    fetch(`http://localhost:8080/movies`)
       .then((res) => res.json())
       .then((res) => setitem(res));
   }, []);

@@ -6,7 +6,7 @@ const productitem = () => {
   React.useEffect(() => {
     fetch(`http://localhost:8080/products`)
       .then((res) => res.json())
-      .then((res) => setusers(res.data));
+      .then((res) => setitem(res));
   }, []);
 
   return (
